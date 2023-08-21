@@ -1,27 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <h1>배포 Test!!!</h1>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="root-wrap">
+    <HeaderComponent />
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderComponent from './components/HeaderComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderComponent
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import "./assets/css/reset.css";
+@import "./assets/css/index.css";
 </style>
