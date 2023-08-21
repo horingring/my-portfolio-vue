@@ -5,17 +5,17 @@ import ContactMePage from "@/pages/ContactMePage.vue";
 
 const routes = [
     {
-        path: "/",
+        path: "/my-portfolio-vue/",
         name: "HomePage",
         component: HomePage
     },
     {
-        path: "/career",
+        path: "/my-portfolio-vue/career",
         name: "CareerPage",
         component: CareerPage
     },
     {
-        path: "/contact",
+        path: "/my-portfolio-vue/contact",
         name: "ContactMePage",
         component: ContactMePage
     }

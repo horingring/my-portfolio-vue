@@ -1,8 +1,11 @@
 <template>
-  <header class="main-header" :class="{'green': routePath === '/career', 'navy': routePath === '/contact'}">
-    <router-link to="/">Home</router-link>
-    <router-link to="/career">Career</router-link>
-    <router-link to="/contact">Contact Me</router-link>
+  <header
+    class="main-header"
+    :class="{'green': routePath === '/my-portfolio-vue/career', 'navy': routePath === '/my-portfolio-vue/contact'}"
+  >
+    <router-link to="/my-portfolio-vue/">Home</router-link>
+    <router-link to="/my-portfolio-vue/career">Career</router-link>
+    <router-link to="/my-portfolio-vue/contact">Contact Me</router-link>
   </header>
 </template>
 
