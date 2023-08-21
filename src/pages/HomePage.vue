@@ -1,10 +1,21 @@
 <template>
-  <div class="home-page_wrap">홈 페이지</div>
+  <div class="home-page_wrap">
+    <main>
+        <IntroComponent />
+        <AboutComponent />
+    </main>
+  </div>
 </template>
 
 <script>
-export default {
+import IntroComponent from '@/components/homePage/IntroComponent.vue';
+import AboutComponent from '@/components/homePage/AboutComponent.vue';
 
+export default {
+    components: {
+        IntroComponent,
+        AboutComponent
+    }
 }
 </script>
 
