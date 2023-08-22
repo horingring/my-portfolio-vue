@@ -1,6 +1,6 @@
 <template>
-  <div class="intro_wrap flex-center" :class="{'background-std_ver': backgroundRate}">
-    <div class="btn flex-center">
+  <div class="intro_wrap flex-center" :class="{'background-std_ver': backgroundRate}" ref="introWrap">
+    <div class="btn flex-center" @click="onClickIntroBtn">
         <span>Let's see</span>
         <span>Your</span>
         <span>NewFace!</span>
@@ -37,6 +37,9 @@ export default {
         calcBackgroundRate() {
             const rate = window.innerWidth / window.innerHeight < 1920/1280;
             this.backgroundRate = rate;
+        },
+        onClickIntroBtn() {
+            window.scrollTo(0, this.$refs.introWrap.offsetHeight);
         }
     }
 }

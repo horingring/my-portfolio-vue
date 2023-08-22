@@ -3,19 +3,20 @@ html,
 body,
 #app,
 .root-wrap {
+    min-width: 350px;
     height: 100%;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 .root-wrap {
     position: relative;
 }
-
 .flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 body::-webkit-scrollbar {
     width: 8px;
     background-color: rgb(0, 0, 0, 0.5);
@@ -79,6 +80,43 @@ body::-webkit-scrollbar-thumb {
 .home-page_wrap main {
     height: 100%;
 }
+.home-page_wrap {
+    position: relative;
+}
+
+/* Home 페이지 _ HomePageNav S */
+nav.home-page_nav {
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    bottom: -100%;
+    right: 0; 
+}
+nav.home-page_nav.fixed {
+    position: fixed;
+    bottom: 0;
+}
+nav.home-page_nav > ul {
+    height: 100%;
+    flex-direction: column;
+    gap: 20vh;
+}
+nav.home-page_nav > ul > li {
+    width: 40%;
+}
+nav.home-page_nav > ul > li > svg {
+    transition: all 0.3s;
+    color: #BEBEBE;
+    max-width: 32px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+nav.home-page_nav > ul > li > svg.on,
+nav.home-page_nav > ul > li > svg:hover {
+    color: white;
+}
+/* Home 페이지 _ HomePageNav E */
 
 /* Home 페이지 _ IntroComponent S */
 .intro_wrap {
@@ -146,4 +184,17 @@ body::-webkit-scrollbar-thumb {
     background-color: white;
 }
 /* Home 페이지 _ AboutComponent E */
+
+/* Home 페이지 _ ProjectComponent S */
+.project_wrap {
+    height: 100%;
+    background-color: #35495e;
+}
+
+.project_wrap .project_container {
+    width: 80vw;
+    height: 100%;
+    background-color: white;
+}
+/* Home 페이지 _ ProjectComponent E */
 /***** Home 페이지 E *****/
