@@ -1,6 +1,11 @@
 <template>
   <div class="project_wrap flex-center">
-    <div class="project_container"></div>
+    <div class="header_area">
+      <h1 class="flex-center">Project</h1>
+      <div class="header_deco"></div>
+    </div>
+    <div class="project_container">
+    </div>
   </div>
 </template>
 
