@@ -2,7 +2,11 @@
   <nav class="home-page_nav" :class="{'fixed': navFixed}" ref="homePageNav">
     <ul class="flex-center">
         <li class="flex-center">
-            <font-awesome-icon :icon="['fas', 'bars']" />
+            <font-awesome-icon
+                :icon="['fas', 'bars']"
+                :class="{'on': gnbBoxOn}"
+                @click="SET_GNB_BOX_ON"
+            />
         </li>
         <li class="flex-center" v-for="(item, idx) in navLiList" :key="idx">
             <font-awesome-icon
@@ -16,6 +20,8 @@
 </template>
 
 <script>
+import { mapState, mapMutations } from 'vuex';
+
 export default {
     data() {
         return {
@@ -37,6 +43,9 @@ export default {
             currentNav: null
         }
     },
+    computed: {
+        ...mapState('commonStore', ['gnbBoxOn'])
+    },
     mounted() {
         window.addEventListener('scroll', this.setNavFixed);
         window.addEventListener('scroll', this.setCurrentNav);
@@ -46,6 +55,7 @@ export default {
         window.removeEventListener('scroll', this.setCurrentNav);
     },
     methods: {
+        ...mapMutations('commonStore', ['SET_GNB_BOX_ON']),
         setNavFixed() {
             if (document.documentElement.scrollTop >= this.$refs.homePageNav.offsetHeight) {
                 this.navFixed = true;

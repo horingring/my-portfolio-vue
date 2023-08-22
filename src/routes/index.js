@@ -7,16 +7,25 @@ const routes = [
     {
         path: "/my-portfolio-vue/",
         name: "HomePage",
+        meta: {
+            nick: "Home"
+        },
         component: HomePage
     },
     {
         path: "/my-portfolio-vue/career",
         name: "CareerPage",
+        meta: {
+            nick: "Career"
+        },
         component: CareerPage
     },
     {
         path: "/my-portfolio-vue/contact",
         name: "ContactMePage",
+        meta: {
+            nick: "Contact Me"
+        },
         component: ContactMePage
     }
 ];
