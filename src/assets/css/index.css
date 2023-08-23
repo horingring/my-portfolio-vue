@@ -1,4 +1,24 @@
 /***** 공통 S *****/
+@font-face {
+    font-family: "KBO_Dia_Gothic";
+    src: url("../fonts/KBO_Dia_Gothic_light.ttf") format("truetype");
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'KBO_Dia_Gothic';
+    src: url("../fonts/KBO_Dia_Gothic_medium.ttf") format("truetype");
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'KBO_Dia_Gothic';
+    src: url("../fonts/KBO_Dia_Gothic_bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+* {
+    font-family: 'KBO_Dia_Gothic', Geneva, Tahoma, sans-serif;
+}
+
 html,
 body,
 #app,
@@ -102,7 +122,7 @@ body::-webkit-scrollbar-thumb {
 .root-wrap .gnb-box_wrap .router-link_wrap a {
     position: relative;
     text-decoration: none;
-    font-size: 54px;
+    font-size: 5vw;
     font-weight: bold;
     color: white;
 }
@@ -205,7 +225,7 @@ nav.home-page_nav > ul > li > svg:hover {
     position: absolute;
     color: white;
     font-weight: bold;
-    font-size: 64px;
+    font-size: 58px;
 }
 .intro_wrap > span:nth-child(2) {
     transition: all 1s;
@@ -241,7 +261,7 @@ nav.home-page_nav > ul > li > svg:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 13%;
+    height: 10%;
 }
 .about_wrap .header_area .header_deco {
     position: absolute;
@@ -264,10 +284,201 @@ nav.home-page_nav > ul > li > svg:hover {
     width: 80%;
     height: 100%;
     box-sizing: border-box;
-    padding-top: 13vh;
+    padding: 10vh 2vw 4vh;
     background-color: white;
 }
+.about_wrap .about_container section {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0 2vw 0 4vw;
+}
+.about_wrap .about_container section:nth-child(1) {
+    position: relative;
+}
+
+.about_wrap .about_container section h2 {
+    transition: all 0.3s;
+    width: 100%;
+    height: 15%;
+    font-size: 24px;
+    font-weight: bold;
+}
+.about_wrap .about_container section:hover h2 {
+    color: #42b883;
+}
+.about_wrap .about_container section .about-me_wrap {
+    width: 100%;
+    height: 85%;
+    box-sizing: border-box;
+    border: 1px solid #42b883;
+    border-radius: 40px;
+}
+.about_wrap .about_container section .about-me_wrap .img_wrap {
+    width: 100%;
+    height: 40%;
+    background: url("../img/my_picture.jpg");
+    background-size: 100% auto;
+    background-position: center bottom;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+.about_wrap .about_container section .about-me_wrap ul {
+    height: 60%;
+    box-sizing: border-box;
+    padding: 2vh 4vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+.about_wrap .about_container section .about-me_wrap ul h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.about_wrap .about_container section .about-me_wrap ul p {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.about_wrap .about_container section:nth-child(2) img {
+    width: 38px;
+    height: auto;
+}
+.about_wrap .about_container section:nth-child(2) ul {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8vh;
+    box-sizing: border-box;
+    padding: 3vh 0;
+}
+.about_wrap .about_container section:nth-child(2) ul li {
+    display: flex;
+    gap: 2vw;
+}
+.about_wrap .about_container section:nth-child(2) ul li .work-style_li_wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+}
+.about_wrap .about_container section:nth-child(2) ul li .work-style_li_wrap h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+.about_wrap .about_container section:nth-child(2) ul li .work-style_li_wrap p {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+@media (max-width: 767px) {
+    /***** 모바일 - 헤더 S *****/
+    .root-wrap header.main-header {
+        padding-right: 3vw;
+    }
+    /***** 모바일 - 헤더 E *****/
+
+    /***** 모바일 - GnbBox S *****/
+    .root-wrap .gnb-box_wrap .router-link_wrap a {
+        font-size: 40px;
+    }
+    /***** 모바일 - GnbBox E *****/
+
+    /***** 모바일 - Home 페이지 S *****/
+    /* 모바일 - Home 페이지 _ IntroComponent S */
+    .intro_wrap .btn {
+        gap: 16px;
+    }
+    .intro_wrap > span {
+        font-size: 44px;
+    }
+    .intro_wrap>span:nth-child(2) {
+        top: 18vh;
+    }
+    .intro_wrap>span:nth-child(3) {
+        bottom: 18vh;
+    }
+    /* 모바일 - Home 페이지 _ IntroComponent E */
+
+    /* 모바일 - Home 페이지 _ AboutComponent S */
+    .about_wrap .about_container {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    .about_wrap .about_container section {
+        width: 100%;
+        height: 45%;
+        padding: 2vw;
+    }
+    .about_wrap .about_container section .about-me_wrap {
+        position: relative;
+        border-radius: 30px;
+        border: none;
+    }
+    .about_wrap .about_container section .about-me_wrap .img_wrap {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        opacity: 0.4;
+    }
+    .about_wrap .about_container section .about-me_wrap ul {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: 10;
+        gap: 3vh;
+        padding-left: calc(2vw + 24px);
+    }
+    .about_wrap .about_container section .about-me_wrap ul h3 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .about_wrap .about_container section .about-me_wrap ul p {
+        font-size: 10px;
+    }
+    
+    .about_wrap .about_container section:nth-child(2) {
+        height: 55%;
+    }
+    .about_wrap .about_container section:nth-child(2) img {
+        width: 24px;
+    }
+    .about_wrap .about_container section:nth-child(2) ul {
+        gap: 0;
+        padding: 0;
+        justify-content: space-around;
+    }
+    .about_wrap .about_container section:nth-child(2) ul li .work-style_li_wrap {
+        gap: 1vh;
+    }
+    .about_wrap .about_container section:nth-child(2) ul li .work-style_li_wrap h3 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .about_wrap .about_container section:nth-child(2) ul li .work-style_li_wrap p {
+        font-size: 10px;
+    }
+    /* 모바일 - Home 페이지 _ AboutComponent E */
+    /***** 모바일 - Home 페이지 S *****/
+}
 /* Home 페이지 _ AboutComponent E */
+
+
+
+
+
+
+
+
 
 /* Home 페이지 _ ProjectComponent S */
 .project_wrap {
@@ -280,7 +491,7 @@ nav.home-page_nav > ul > li > svg:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 13%;
+    height: 10%;
 }
 .project_wrap .header_area .header_deco {
     position: absolute;
@@ -303,7 +514,7 @@ nav.home-page_nav > ul > li > svg:hover {
     width: 80%;
     height: 100%;
     box-sizing: border-box;
-    padding-top: 13vh;
+    padding: 10vh 4vw 4vh;
     background-color: white;
 }
 /* Home 페이지 _ ProjectComponent E */
