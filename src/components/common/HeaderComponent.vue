@@ -1,12 +1,18 @@
 <template>
   <header
     class="main-header"
-    :class="{'green': routePath === '/my-portfolio-vue/career', 'navy': routePath === '/my-portfolio-vue/contact'}"
+    :class="{
+      'green': routeName && routeName.includes('Career'),
+      'navy': routeName === 'ContactMePage',
+      'project-detail-page': isProjectDetailPage
+    }"
+    :style="{'background-color': isProjectDetailPage && currentProjectDetail() ? currentProjectDetail().color : null}"
   >
     <router-link
-      v-for="(route, idx) in $router.getRoutes()"
+      v-for="(route, idx) in gnbList"
       :key="idx"
       :to="route.path"
+      :class="{'router-link-exact-active': route.name === 'CareerPage' && routeName === 'CareerDetailPage'}"
     >
       {{ route.meta.nick }}
     </router-link>
@@ -14,10 +20,29 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
+
 export default {
   computed: {
-    routePath() {
-      return this.$route.path;
+    ...mapState('projectStore', ['projectList']),
+    routeName() {
+      return this.$route.name;
+    },
+    gnbList() {
+      return this.$router.getRoutes().filter(v => v.meta.gnbYn)
+    },
+    isProjectDetailPage() {
+      return this.routeName === 'CareerDetailPage';
+    },
+  },
+  methods: {
+    currentProjectDetail() {
+      for(let i=0; i<this.projectList.length; i++) {
+        if (Number(this.projectList[i].id) === Number(this.$route.params.careerId)) {
+          return this.projectList[i];
+        }
+      }
+      return null;
     }
   }
 }

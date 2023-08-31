@@ -2,7 +2,7 @@
   <div class="gnb-box_wrap flex-center" :class="{'on': gnbBoxOn}">
     <div class="router-link_wrap">
         <router-link
-            v-for="(route, idx) in $router.getRoutes()"
+            v-for="(route, idx) in gnbList"
             :key="idx"
             :to="route.path"
             @click="onClickGnbLi"
@@ -24,7 +24,10 @@ import { mapState, mapMutations } from 'vuex';
 
 export default {
     computed: {
-        ...mapState('commonStore', ['gnbBoxOn'])
+        ...mapState('commonStore', ['gnbBoxOn']),
+        gnbList() {
+            return this.$router.getRoutes().filter(v => v.meta.gnbYn)
+        }
     },
     methods: {
         ...mapMutations('commonStore', ['SET_GNB_BOX_ON']),
