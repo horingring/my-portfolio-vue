@@ -692,6 +692,26 @@ nav.home-page_nav>ul>li>svg:hover {
 
 /* Career 페이지 _ 상세 페이지 _ 프로젝트 2(* KB 글로벌 뱅킹) E */
 
+/* Career 페이지 _ 상세 페이지 _ 프로젝트 3(* 유독) S */
+.career-detail-page_content.content_3 main>section ul {
+    padding-right: 0;
+}
+.career-detail-page_content main>section h4 {
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+.career-detail-page_content main>section h5 {
+    margin-bottom: 10px;
+}
+.career-detail-page_content.content_3 .about_section>ul>li>ul {
+    margin-top: 12px;
+}
+.career-detail-page_content.content_3 .meaning_section ul {
+    gap: 24px;
+}
+
+/* Career 페이지 _ 상세 페이지 _ 프로젝트 3(* 유독) E */
+
 /* Career 페이지 _ 상세 페이지 E */
 /***** Career 페이지 E *****/
 

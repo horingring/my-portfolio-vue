@@ -17,6 +17,7 @@ const projectStore = {
                 id: 3,
                 title: "LG U+ 유료구독 플랫폼 유독",
                 subTitle: "LG U+ 유독",
+                url: "https://www.lguplus.com/pogg/",
                 mainImg: require("@/assets/img/career/project_3/udok_main.png"),
                 color: "#e6017e",
                 from: "2022.05",
