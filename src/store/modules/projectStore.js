@@ -35,6 +35,7 @@ const projectStore = {
                 id: 1,
                 title: "요식업플랫폼 주막",
                 subTitle: "요식업플랫폼 주막",
+                url: "http://dev-joomak-delivery.s3-website.ap-northeast-2.amazonaws.com/",
                 mainImg: require("@/assets/img/career/project_1/joomak_main.png"),
                 color: "#fec562",
                 from: "2021.04",

@@ -29,13 +29,18 @@
       <section>
         <h2>🔖 작업사항</h2>
         <ul>
-          <li>- 인트로</li>
-          <li>- 나의 정보</li>
-          <li>- 기술 & 프로젝트</li>
-          <li>- Contact Me</li>
+          <li>
+            <h3>FrontEnd</h3>
+            <ul>
+              <li>- 인트로</li>
+              <li>- 나의 정보</li>
+              <li>- 기술 & 프로젝트</li>
+              <li>- Contact Me</li>
+            </ul>
+          </li>
         </ul>
       </section>
-      <section>
+      <section class="meaning_section">
         <h2>✨ Meaning</h2>
         <ul>
           <li>

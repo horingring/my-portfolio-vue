@@ -648,7 +648,7 @@ nav.home-page_nav>ul>li>svg:hover {
 .career-detail-page_content main > section > h2 {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 .career-detail-page_content main > section ul {
     padding: 0 16px;
@@ -663,6 +663,12 @@ nav.home-page_nav>ul>li>svg:hover {
 .career-detail-page_content main > section p {
     margin-top: 10px;
     line-height: 28px;
+}
+.career-detail-page_content main > section.meaning_section > ul > li {
+    margin-bottom: 16px;
+}
+.career-detail-page_content main>section.meaning_section>ul>li:nth-last-child(1) {
+    margin-bottom: 0;
 }
 /* Career 페이지 _ 상세 페이지 _ 공통 E */
 
