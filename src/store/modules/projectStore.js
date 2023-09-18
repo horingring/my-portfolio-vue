@@ -8,6 +8,7 @@ const projectStore = {
                 id: 4,
                 title: "My Portfolio_Vue",
                 subTitle: "My Portfolio_Vue",
+                url: "https://horingring.github.io/my-portfolio-vue/",
                 mainImg: require("@/assets/img/career/project_4/my-portfolio-vue_main.png"),
                 color: "#42b883",
                 from: "2023.08",
@@ -40,7 +41,7 @@ const projectStore = {
                 url: "http://dev-joomak-delivery.s3-website.ap-northeast-2.amazonaws.com/",
                 mainImg: require("@/assets/img/career/project_1/joomak_main.png"),
                 color: "#fec562",
-                from: "2021.04",
+                from: "2021.05",
                 to: "2021.12"
             },
             {

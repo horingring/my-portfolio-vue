@@ -14,7 +14,7 @@
       <section>
         <h2>🛠️ Used Tech & Tool</h2>
         <ul>
-          <li>FrontEnd : Vue.js, Nuxt.js, javascript, css, Websquare, VSCode</li>
+          <li>FrontEnd : Vue.js, Nuxt.js, Javascript, CSS, Websquare, VSCode</li>
           <li>BackEnd : Java, Spring, MySQL, STS, DBeaver</li>
           <li>버전관리 : Git, GitLab, SourceTree</li>
           <li>배포관리 : Jenkins</li>
@@ -125,7 +125,6 @@
               </li>
             </ul>
           </li>
-
           <li>
             <h3>[&nbsp;&nbsp;관리자 Back Office&nbsp;&nbsp;]</h3>
             <ul>
@@ -149,7 +148,6 @@
               </li>
             </ul>
           </li>
-
           <li>
             <h3>[&nbsp;&nbsp;버전관리&nbsp;&nbsp;]</h3>
             <ul>

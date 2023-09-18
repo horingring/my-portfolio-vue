@@ -2,7 +2,7 @@
   <div class="career-detail-page_content content_2">
     <header>
       <h1>{{ currentProject.title }}</h1>
-      <span>{{ currentProject.from }} ~ {{ currentProject.to }}&nbsp;&nbsp;(6개월)</span>
+      <span>{{ currentProject.from }} ~ {{ currentProject.to }}&nbsp;&nbsp;(5개월)</span>
       <span>
         url :&nbsp;
         <a :href="currentProject.url" target="_blank">
@@ -14,7 +14,7 @@
       <section>
         <h2>🛠️ Used Tech & Tool</h2>
         <ul>
-          <li>FrontEnd : Vue.js, javascript, IntelliJ</li>
+          <li>FrontEnd : Vue.js, Javascript, IntelliJ</li>
           <li>BackEnd : Java, Spring, MySQL, STS, Orange DB</li>
           <li>버전관리 : Git, Bitbucket, IntelliJ</li>
           <li>배포관리 : Jenkins</li>
