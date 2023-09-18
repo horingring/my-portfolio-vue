@@ -2,7 +2,7 @@
   <div class="career-detail-page_content content_0">
     <header>
       <h1>{{ currentProject.title }}</h1>
-      <span>( {{ currentProject.from }} ~ {{ currentProject.to }} )</span>
+      <span>{{ currentProject.from }} ~ {{ currentProject.to }}&nbsp;&nbsp;(3개월)</span>
       <span>
         url :&nbsp;
         <a :href="currentProject.url" target="_blank">
@@ -14,6 +14,7 @@
       <section>
         <h2>🛠️ Used Tech & Tool</h2>
         <ul>
+          <li>기획 & 디자인 : Kakao Oven</li>
           <li>FrontEnd : React.js, javascript, Sass, VSCode</li>
           <li>버전관리 : Git, GitHub, GitKraken</li>
           <li>배포관리 : GitHub Actions</li>

@@ -609,13 +609,14 @@ nav.home-page_nav>ul>li>svg:hover {
     font-weight: bold;
 }
 
-.career-detail-page_wrap > main {
+.career-detail-page_wrap>main {
     width: 72%;
     height: 100%;
     overflow-y: auto;
     padding: 80px 36px;
     padding-right: 52px;
     box-sizing: border-box;
+    line-height: 24px;
 }
 
 .career-detail-page_content header {
@@ -626,51 +627,70 @@ nav.home-page_nav>ul>li>svg:hover {
     margin-bottom: 50px;
 }
 
-.career-detail-page_content header > h1 {
+.career-detail-page_content header>h1 {
     font-size: 36px;
     font-weight: bold;
 }
-.career-detail-page_content header > span:nth-child(2) {
+
+.career-detail-page_content header>span:nth-child(2) {
     color: #666666;
     font-size: 14px;
 }
+
 .career-detail-page_content header a {
     color: #6bacce;
     text-decoration: none;
 }
+
 .career-detail-page_content header a:hover {
     text-decoration: underline;
 }
 
-.career-detail-page_content main > section{
+.career-detail-page_content main>section {
     margin-top: 50px;
 }
-.career-detail-page_content main > section > h2 {
+
+.career-detail-page_content main>section>h2 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 24px;
 }
-.career-detail-page_content main > section ul {
+
+.career-detail-page_content main>section ul {
     padding: 0 16px;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
-.career-detail-page_content main > section h3 {
+
+.career-detail-page_content main>section h3 {
     margin-bottom: 12px;
     font-weight: bold;
 }
-.career-detail-page_content main > section p {
+
+.career-detail-page_content main>section p {
     margin-top: 10px;
     line-height: 28px;
 }
-.career-detail-page_content main > section.meaning_section > ul > li {
+
+.career-detail-page_content main>section.work_section>ul>li,
+.career-detail-page_content main>section.meaning_section>ul>li {
     margin-bottom: 16px;
 }
+
+.career-detail-page_content main>section.work_section>ul>li:nth-last-child(1),
 .career-detail-page_content main>section.meaning_section>ul>li:nth-last-child(1) {
     margin-bottom: 0;
 }
+
 /* Career 페이지 _ 상세 페이지 _ 공통 E */
+
+/* Career 페이지 _ 상세 페이지 _ 프로젝트 2(* KB 글로벌 뱅킹) S */
+.career-detail-page_content.content_2 .about_section>ul>li>ul {
+    margin-top: 12px;
+}
+
+/* Career 페이지 _ 상세 페이지 _ 프로젝트 2(* KB 글로벌 뱅킹) E */
 
 /* Career 페이지 _ 상세 페이지 E */
 /***** Career 페이지 E *****/
@@ -817,24 +837,31 @@ nav.home-page_nav>ul>li>svg:hover {
         height: 100%;
     }
 
-    .career-detail-page_wrap > main {
+    .career-detail-page_wrap>main {
         width: 100%;
         overflow-y: initial;
-        line-height: 24px;
     }
 
-    .career-detail-page_content header > h1 {
+    .career-detail-page_content header>h1 {
         font-size: 24px;
     }
 
-    .career-detail-page_content main > section > h2 {
+    .career-detail-page_content main>section>h2 {
         font-size: 20px;
     }
 
-    .career-detail-page_content main > section:nth-last-child(1) {
+    .career-detail-page_content main>section:nth-last-child(1) {
         padding-bottom: 100px;
     }
+
     /* 모바일 - Career 페이지 _ 상세 페이지 _ 공통 E */
+
+    /* 모바일 - Career 페이지 _ 상세 페이지 _ 프로젝트 2(* KB 글로벌 뱅킹) S */
+    .career-detail-page_content.content_2 header>h1 {
+        font-size: 22px;
+    }
+
+    /* 모바일 - Career 페이지 _ 상세 페이지 _ 프로젝트 2(* KB 글로벌 뱅킹) E */
     /* 모바일 - Career 페이지 _ 상세 페이지 E */
     /***** 모바일 - Career 페이지 E *****/
 }

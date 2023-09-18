@@ -2,7 +2,7 @@
   <div class="career-detail-page_content content_1">
     <header>
       <h1>{{ currentProject.title }}</h1>
-      <span>( {{ currentProject.from }} ~ {{ currentProject.to }} )</span>
+      <span>{{ currentProject.from }} ~ {{ currentProject.to }}&nbsp;&nbsp;(8개월)</span>
       <span>
         url :&nbsp;
         <a :href="currentProject.url" target="_blank">
@@ -14,11 +14,11 @@
       <section>
         <h2>🛠️ Used Tech & Tool</h2>
         <ul>
-          <li>기획 & 디자인 : 카카오 오븐, Figma, Zeplin</li>
+          <li>기획 & 디자인 : Kakao Oven, Figma, Zeplin</li>
           <li>FrontEnd : Vue.js, javascript, css, Bootstrap, kakaomap, VSCode</li>
           <li>BackEnd : Java, Sprint Boot, JPA, MariaDB, ZooKeeper, kafka, IntelliJ</li>
           <li>인프라 : Amazon S3, Amazon cloudfront, Amazon Route 53, Amazon EC2</li>
-          <li>버전관리 : GitHub, GitHub Actions, GitKraken</li>
+          <li>버전관리 : Git, GitHub, GitHub Actions, GitKraken</li>
           <li>배포관리 : Jenkins</li>
         </ul>
       </section>
