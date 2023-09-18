@@ -1,3 +1,5 @@
+import router from "@/routes/index.js";
+
 const projectStore = {
     namespaced: true,
     state: {
@@ -42,6 +44,7 @@ const projectStore = {
                 id: 0,
                 title: "My Portfolio_React",
                 subTitle: "My Portfolio_React",
+                url: "https://horingring.github.io/my-portfolio/",
                 mainImg: require("@/assets/img/career/project_0/my-portfolio-react_main.png"),
                 color: "#4a4291",
                 from: "2020.12",
@@ -49,7 +52,30 @@ const projectStore = {
             }
         ]
     },
-    getters: {},
+    getters: {
+        currentProject(state) {
+            let currentProject = {
+                id: null,
+                title: null,
+                subTitle: null,
+                mainImg: null,
+                color: null,
+                from: null,
+                to: null
+            };
+
+            if (router.currentRoute.value.params && router.currentRoute.value.params.careerId) {
+                for (let i=0; i<state.projectList.length; i++) {
+                    if (Number(router.currentRoute.value.params.careerId) == Number(state.projectList[i].id)) {
+                        currentProject = state.projectList[i];
+                        break;
+                    }
+                }
+            }
+
+            return currentProject;
+        }
+    },
     mutations: {},
     actions: {}
 };
