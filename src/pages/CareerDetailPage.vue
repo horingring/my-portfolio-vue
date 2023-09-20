@@ -1,8 +1,13 @@
 <template>
   <div class="career-detail-page_wrap">
     <CareerLnb />
-    <main>
+    <main ref="detail_main">
         <component :is="`CareerDetail${routeParams.careerId}`"></component>
+        <div class="top_btn_wrap flex-center">
+            <div class="top_btn flex-center" @click="onClickTopBtn">
+                <font-awesome-icon :icon="['fas', 'chevron-up']" style="color: #ffffff;" />
+            </div>
+        </div>
     </main>
   </div>
 </template>
@@ -27,6 +32,15 @@ export default {
     computed: {
         routeParams() {
             return this.$route.params;
+        }
+    },
+    methods: {
+        onClickTopBtn() {
+            if(window.innerWidth > 767) {
+                this.$refs.detail_main.scrollTo(0, 0);
+            } else {
+                window.scrollTo(0, 0);
+            }
         }
     }
 }
