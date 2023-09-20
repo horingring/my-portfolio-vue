@@ -5,6 +5,9 @@
     />
     <main>
       <section>
+        <CareerDetailCarousel :slides="slides" />
+      </section>
+      <section>
         <h2>🛠️ Used Tech & Tool</h2>
         <ul>
           <li>기획 & 디자인 : Kakao Oven, Figma, Zeplin</li>
@@ -70,10 +73,47 @@
 
 <script>
 import CareerDetailHeader from "@/components/careerPage/detail/CareerDetailHeader.vue";
+import CareerDetailCarousel from "@/components/careerPage/detail/CareerDetailCarousel.vue";
 
 export default {
   components: {
-    CareerDetailHeader
+    CareerDetailHeader,
+    CareerDetailCarousel
+  },
+  data() {
+    return {
+      slides: [
+        {
+          src: require("@/assets/img/career/project_1/joomak_0.png"),
+          alt: "joomak_0"
+        },
+        {
+          src: require("@/assets/img/career/project_1/joomak_1.png"),
+          alt: "joomak_1"
+        },
+        {
+          src: require("@/assets/img/career/project_1/joomak_2.png"),
+          alt: "joomak_2"
+        },
+        {
+          src: require("@/assets/img/career/project_1/joomak_3.png"),
+          alt: "joomak_3"
+        },
+        {
+          src: require("@/assets/img/career/project_1/joomak_4.png"),
+          alt: "joomak_4"
+        },
+        {
+          src: require("@/assets/img/career/project_1/joomak_5.png"),
+          alt: "joomak_5"
+        }
+        ,
+        {
+          src: require("@/assets/img/career/project_1/joomak_6.png"),
+          alt: "joomak_6"
+        }
+      ]
+    };
   }
 }
 </script>

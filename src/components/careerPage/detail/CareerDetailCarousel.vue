@@ -1,6 +1,7 @@
 <template>
   <Carousel
     :wrapAround="true"
+    :autoplay="Number(3000)"
     :pauseAutoplayOnHover="true"
   >
     <template #slides>

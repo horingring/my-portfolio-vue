@@ -5,6 +5,9 @@
     />
     <main>
       <section>
+        <CareerDetailCarousel :slides="slides" />
+      </section>
+      <section>
         <h2>🛠️ Used Tech & Tool</h2>
         <ul>
           <li>FrontEnd : Vue.js, Javascript, IntelliJ</li>
@@ -83,10 +86,38 @@
 
 <script>
 import CareerDetailHeader from "@/components/careerPage/detail/CareerDetailHeader.vue";
+import CareerDetailCarousel from "@/components/careerPage/detail/CareerDetailCarousel.vue";
 
 export default {
   components: {
-    CareerDetailHeader
+    CareerDetailHeader,
+    CareerDetailCarousel
+  },
+  data() {
+    return {
+      slides: [
+        {
+          src: require("@/assets/img/career/project_2/kb-global-banking_0.png"),
+          alt: "kb-global-banking_0"
+        },
+        {
+          src: require("@/assets/img/career/project_2/kb-global-banking_1.png"),
+          alt: "kb-global-banking_1"
+        },
+        {
+          src: require("@/assets/img/career/project_2/kb-global-banking_2.png"),
+          alt: "kb-global-banking_2"
+        },
+        {
+          src: require("@/assets/img/career/project_2/kb-global-banking_3.png"),
+          alt: "kb-global-banking_3"
+        },
+        {
+          src: require("@/assets/img/career/project_2/kb-global-banking_4.png"),
+          alt: "kb-global-banking_4"
+        },
+      ]
+    };
   }
 }
 </script>
