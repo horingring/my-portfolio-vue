@@ -5,6 +5,9 @@
     />
     <main>
       <section>
+        <CareerDetailCarousel :slides="slides" />
+      </section>
+      <section>
         <h2>🛠️ Used Tech & Tool</h2>
         <ul>
           <li>FrontEnd : Vue.js, Nuxt.js, Javascript, CSS, Websquare, VSCode</li>
@@ -163,10 +166,47 @@
 
 <script>
 import CareerDetailHeader from "@/components/careerPage/detail/CareerDetailHeader.vue";
+import CareerDetailCarousel from "@/components/careerPage/detail/CareerDetailCarousel.vue";
 
 export default {
   components: {
-    CareerDetailHeader
+    CareerDetailHeader,
+    CareerDetailCarousel
+  },
+  data() {
+    return {
+      slides: [
+        {
+          src: require("@/assets/img/career/project_3/udok_0.png"),
+          alt: "udok_0"
+        },
+        {
+          src: require("@/assets/img/career/project_3/udok_1.png"),
+          alt: "udok_1"
+        },
+        {
+          src: require("@/assets/img/career/project_3/udok_2.png"),
+          alt: "udok_2"
+        },
+        {
+          src: require("@/assets/img/career/project_3/udok_3.png"),
+          alt: "udok_3"
+        },
+        {
+          src: require("@/assets/img/career/project_3/udok_4.png"),
+          alt: "udok_4"
+        },
+        {
+          src: require("@/assets/img/career/project_3/udok_5.png"),
+          alt: "udok_5"
+        }
+        ,
+        {
+          src: require("@/assets/img/career/project_3/udok_6.png"),
+          alt: "udok_6"
+        }
+      ]
+    };
   }
 }
 </script>

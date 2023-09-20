@@ -650,6 +650,11 @@ nav.home-page_nav>ul>li>svg:hover {
     margin-top: 50px;
 }
 
+.carousel__slide img {
+    width: 100%;
+    height: auto;
+}
+
 .career-detail-page_content main>section>h2 {
     font-size: 24px;
     font-weight: bold;
