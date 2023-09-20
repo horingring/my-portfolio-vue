@@ -5,6 +5,9 @@
     />
     <main>
       <section>
+        <CareerDetailCarousel :slides="slides" />
+      </section>
+      <section>
         <h2>🛠️ Used Tech & Tool</h2>
         <ul>
           <li>기획 & 디자인 : Kakao Oven</li>
@@ -64,10 +67,42 @@
 
 <script>
 import CareerDetailHeader from "@/components/careerPage/detail/CareerDetailHeader.vue";
+import CareerDetailCarousel from "@/components/careerPage/detail/CareerDetailCarousel.vue";
 
 export default {
   components: {
-    CareerDetailHeader
+    CareerDetailHeader,
+    CareerDetailCarousel
+  },
+  data() {
+    return {
+      slides: [
+        {
+          src: require("@/assets/img/career/project_4/my-portfolio-vue_0.png"),
+          alt: "my-portfolio-vue_0"
+        },
+        {
+          src: require("@/assets/img/career/project_4/my-portfolio-vue_1.png"),
+          alt: "my-portfolio-vue_1"
+        },
+        {
+          src: require("@/assets/img/career/project_4/my-portfolio-vue_2.png"),
+          alt: "my-portfolio-vue_2"
+        },
+        {
+          src: require("@/assets/img/career/project_4/my-portfolio-vue_3.png"),
+          alt: "my-portfolio-vue_3"
+        },
+        {
+          src: require("@/assets/img/career/project_4/my-portfolio-vue_4.png"),
+          alt: "my-portfolio-vue_4"
+        },
+        {
+          src: require("@/assets/img/career/project_4/my-portfolio-vue_5.png"),
+          alt: "my-portfolio-vue_5"
+        }
+      ]
+    };
   }
 }
 </script>

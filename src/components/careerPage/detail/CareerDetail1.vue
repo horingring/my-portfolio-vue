@@ -106,8 +106,7 @@ export default {
         {
           src: require("@/assets/img/career/project_1/joomak_5.png"),
           alt: "joomak_5"
-        }
-        ,
+        },
         {
           src: require("@/assets/img/career/project_1/joomak_6.png"),
           alt: "joomak_6"

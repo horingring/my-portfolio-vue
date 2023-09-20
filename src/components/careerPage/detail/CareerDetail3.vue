@@ -199,8 +199,7 @@ export default {
         {
           src: require("@/assets/img/career/project_3/udok_5.png"),
           alt: "udok_5"
-        }
-        ,
+        },
         {
           src: require("@/assets/img/career/project_3/udok_6.png"),
           alt: "udok_6"
