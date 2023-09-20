@@ -1,15 +1,8 @@
 <template>
   <div class="career-detail-page_content content_0">
-    <header>
-      <h1>{{ currentProject.title }}</h1>
-      <span>{{ currentProject.from }} ~ {{ currentProject.to }}&nbsp;&nbsp;(3개월)</span>
-      <span>
-        url :&nbsp;
-        <a :href="currentProject.url" target="_blank">
-          {{ currentProject.url }}
-        </a>
-      </span>
-    </header>
+    <CareerDetailHeader
+      period="3"
+    />
     <main>
       <section>
         <h2>🛠️ Used Tech & Tool</h2>
@@ -60,11 +53,11 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import CareerDetailHeader from "@/components/careerPage/detail/CareerDetailHeader.vue";
 
 export default {
-  computed: {
-    ...mapGetters('projectStore', ['currentProject'])
+  components: {
+    CareerDetailHeader
   }
 }
 </script>
