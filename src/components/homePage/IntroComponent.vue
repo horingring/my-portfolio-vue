@@ -1,42 +1,43 @@
 <template>
-  <div class="intro_wrap flex-center" :class="{'background-std_ver': backgroundRate}" ref="introWrap">
-    <div class="btn flex-center" @click="onClickIntroBtn">
-        <span>Let's see</span>
-        <span>Your</span>
-        <span>NewFace!</span>
+  <div class="intro_wrap" ref="introWrap">
+    <video muted autoplay loop ref="backgroundVideo">
+        <source :src="require('@/assets/videos/pexels-taryn-elliott-6051208 (1440p).mp4')" type="video/mp4">
+    </video>
+    <div class="flex-center">
+        <div class="btn flex-center" @click="onClickIntroBtn">
+            <span>Let's see</span>
+            <span>Your</span>
+            <span>NewFace!</span>
+        </div>
+        <span ref="intro1">Developer</span>
+        <span ref="intro2">KH Lee</span>
     </div>
-    <span ref="intro1">Developer</span>
-    <span ref="intro2">KH Lee</span>
   </div>
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            backgroundRate: null
-        }
-    },
     computed: {
         routePath() {
             return this.$route.path;
         }
     },
     mounted() {
-        this.calcBackgroundRate();
-        window.addEventListener('resize', this.calcBackgroundRate);
+        this.setBackground();
+        window.addEventListener('resize', this.setBackground);
         setTimeout(() => {
             this.$refs.intro1.classList.add("on");
             this.$refs.intro2.classList.add("on");
         }, 200);
     },
     beforeUnmount() {
-        window.removeEventListener('resize', this.calcBackgroundRate);
+        window.removeEventListener('resize', this.setBackground);
     },
     methods: {
-        calcBackgroundRate() {
-            const rate = window.innerWidth / window.innerHeight < 1920/1280;
-            this.backgroundRate = rate;
+        setBackground() {
+            const backgroundVideo = this.$refs.backgroundVideo;
+            backgroundVideo.width = window.innerWidth;
+            backgroundVideo.height = window.innerHeight;
         },
         onClickIntroBtn() {
             window.scrollTo(0, this.$refs.introWrap.offsetHeight);

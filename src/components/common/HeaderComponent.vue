@@ -2,7 +2,7 @@
   <header
     class="main-header"
     :class="{
-      'green': routeName && routeName.includes('Career'),
+      'ocean': routeName && routeName.includes('Career'),
       'navy': routeName === 'ContactMePage',
       'project-detail-page': isProjectDetailPage
     }"

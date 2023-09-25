@@ -79,8 +79,8 @@ body::-webkit-scrollbar-thumb {
     transition: all 0.3s;
 }
 
-.root-wrap header.main-header.green {
-    background-color: #42b883;
+.root-wrap header.main-header.ocean {
+    background-color: #3ce8d6;
 }
 
 .root-wrap header.main-header.navy {
@@ -90,7 +90,7 @@ body::-webkit-scrollbar-thumb {
 .root-wrap header.main-header a {
     font-size: 24px;
     font-weight: bold;
-    color: #BEBEBE;
+    color: #CDD;
     text-decoration: none;
 }
 
@@ -214,7 +214,7 @@ nav.home-page_nav>ul>li {
 
 nav.home-page_nav>ul>li>svg {
     transition: all 0.3s;
-    color: #BEBEBE;
+    color: #CDD;
     max-width: 32px;
     width: 100%;
     height: auto;
@@ -232,16 +232,23 @@ nav.home-page_nav>ul>li>svg:hover {
 .intro_wrap {
     position: relative;
     height: 100%;
-    background-image: url("../img/northern-lights-3242090_1920.jpg");
-    background-position: center;
-    background-size: 100% auto;
 }
 
-.intro_wrap.background-std_ver {
-    background-size: auto 100%;
+.intro_wrap video {
+    position: fixed;
+    object-fit: cover;
 }
 
-.intro_wrap .btn {
+.intro_wrap>div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.intro_wrap>div .btn {
     flex-direction: column;
     gap: 10px;
     color: #BEBEBE;
@@ -254,39 +261,39 @@ nav.home-page_nav>ul>li>svg:hover {
     cursor: pointer;
 }
 
-.intro_wrap .btn:hover {
+.intro_wrap>div .btn:hover {
     color: white;
 }
 
-.intro_wrap>span {
+.intro_wrap>div>span {
     position: absolute;
     color: white;
     font-weight: bold;
     font-size: 58px;
 }
 
-.intro_wrap>span:nth-child(2) {
+.intro_wrap>div>span:nth-child(2) {
     transition: all 1s;
-    top: 10vh;
+    top: 20vh;
     left: -5vw;
     opacity: 0;
 }
 
-.intro_wrap>span:nth-child(2).on {
-    left: 5vw;
+.intro_wrap>div>span:nth-child(2).on {
+    left: 7vw;
     opacity: 1;
 }
 
-.intro_wrap>span:nth-child(3) {
+.intro_wrap>div>span:nth-child(3) {
     transition: all 1s;
     transition-delay: 1s;
-    bottom: 10vh;
+    bottom: 20vh;
     right: 0vw;
     opacity: 0;
 }
 
-.intro_wrap>span:nth-child(3).on {
-    right: 5vw;
+.intro_wrap>div>span:nth-child(3).on {
+    right: 7vw;
     opacity: 1;
 }
 
@@ -296,7 +303,7 @@ nav.home-page_nav>ul>li>svg:hover {
 .about_wrap {
     position: relative;
     height: 100%;
-    background-color: #42b883;
+    background-color: #3ce8d6;
 }
 
 .about_wrap .header_area {
@@ -354,14 +361,14 @@ nav.home-page_nav>ul>li>svg:hover {
 }
 
 .about_wrap .about_container section:hover h2 {
-    color: #42b883;
+    color: #3ce8d6;
 }
 
 .about_wrap .about_container section .about-me_wrap {
     width: 100%;
     height: 85%;
     box-sizing: border-box;
-    border: 1px solid #42b883;
+    border: 1px solid #3ce8d6;
     border-radius: 40px;
 }
 
@@ -774,15 +781,15 @@ nav.home-page_nav>ul>li>svg:hover {
         gap: 16px;
     }
 
-    .intro_wrap>span {
+    .intro_wrap>div>span {
         font-size: 44px;
     }
 
-    .intro_wrap>span:nth-child(2) {
+    .intro_wrap>div>span:nth-child(2) {
         top: 18vh;
     }
 
-    .intro_wrap>span:nth-child(3) {
+    .intro_wrap>div>span:nth-child(3) {
         bottom: 18vh;
     }
 

@@ -10,7 +10,7 @@ const projectStore = {
                 subTitle: "My Portfolio_Vue",
                 url: "https://horingring.github.io/my-portfolio-vue/",
                 mainImg: require("@/assets/img/career/project_4/my-portfolio-vue_0.png"),
-                color: "#42b883",
+                color: "#3ce8d6",
                 from: "2023.08",
                 to: "2023.09"
             },
