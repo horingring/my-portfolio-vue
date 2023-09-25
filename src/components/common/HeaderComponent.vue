@@ -2,8 +2,8 @@
   <header
     class="main-header"
     :class="{
-      'ocean': routeName && routeName.includes('Career'),
-      'navy': routeName === 'ContactMePage',
+      'career': routeName && routeName.includes('Career'),
+      'contactme': routeName === 'ContactMePage',
       'project-detail-page': isProjectDetailPage
     }"
     :style="{'background-color': isProjectDetailPage && currentProjectDetail() ? currentProjectDetail().color : null}"

@@ -79,18 +79,22 @@ body::-webkit-scrollbar-thumb {
     transition: all 0.3s;
 }
 
-.root-wrap header.main-header.ocean {
+.root-wrap header.main-header.career {
     background-color: #3ce8d6;
 }
 
-.root-wrap header.main-header.navy {
-    background-color: #35495e;
+.root-wrap header.main-header.career a {
+    color: #cdd;
+}
+
+.root-wrap header.main-header.contactme a {
+    color: #333;
 }
 
 .root-wrap header.main-header a {
     font-size: 24px;
     font-weight: bold;
-    color: #CDD;
+    color: #555;
     text-decoration: none;
 }
 
@@ -210,11 +214,12 @@ nav.home-page_nav>ul {
 
 nav.home-page_nav>ul>li {
     width: 40%;
+    max-width: 27px;
 }
 
 nav.home-page_nav>ul>li>svg {
     transition: all 0.3s;
-    color: #CDD;
+    color: #999;
     max-width: 32px;
     width: 100%;
     height: auto;
@@ -303,7 +308,7 @@ nav.home-page_nav>ul>li>svg:hover {
 .about_wrap {
     position: relative;
     height: 100%;
-    background-color: #3ce8d6;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 .about_wrap .header_area {
@@ -368,18 +373,16 @@ nav.home-page_nav>ul>li>svg:hover {
     width: 100%;
     height: 85%;
     box-sizing: border-box;
-    border: 1px solid #3ce8d6;
     border-radius: 40px;
 }
 
 .about_wrap .about_container section .about-me_wrap .img_wrap {
     width: 100%;
     height: 40%;
-    background: url("../img/my_picture.jpg");
+    background: url("../img/homepage/my_picture.jpg");
     background-size: 100% auto;
     background-position: center bottom;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+    border-radius: 40px;
 }
 
 .about_wrap .about_container section .about-me_wrap ul {
@@ -449,7 +452,8 @@ nav.home-page_nav>ul>li>svg:hover {
 /* Home 페이지 _ ProjectComponent S */
 .project_wrap {
     height: 100%;
-    background-color: #35495e;
+    /* background-color: #35495e; */
+    background-color: rgba(0, 0, 0, 0.5);
     position: relative;
 }
 
@@ -507,7 +511,7 @@ nav.home-page_nav>ul>li>svg:hover {
 
 .career-page_wrap>ul {
     width: 100%;
-    height: 80%;
+    height: 75%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -755,6 +759,42 @@ nav.home-page_nav>ul>li>svg:hover {
 /* Career 페이지 _ 상세 페이지 E */
 /***** Career 페이지 E *****/
 
+/***** Contact Me 페이지 S *****/
+.contact-me-page_wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("../img/contactme/pawel-czerwinski-F62HhUiaiSU-unsplash.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-me-page_wrap>div {
+    position: absolute;
+    right: 10vw;
+    bottom: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 5vh;
+}
+
+.contact-me-page_wrap span {
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+}
+
+.contact-me-page_wrap span:nth-child(1) {
+    bottom: 30vh;
+}
+
+.contact-me-page_wrap span:nth-child(2) {
+    bottom: 10vh;
+}
+
+/***** Contact Me 페이지 E *****/
+
 @media (max-width: 767px) {
 
     /***** 모바일 - 헤더 S *****/
@@ -782,7 +822,7 @@ nav.home-page_nav>ul>li>svg:hover {
     }
 
     .intro_wrap>div>span {
-        font-size: 44px;
+        font-size: 40px;
     }
 
     .intro_wrap>div>span:nth-child(2) {
@@ -879,7 +919,7 @@ nav.home-page_nav>ul>li>svg:hover {
     }
 
     .career-page_wrap>ul>li {
-        height: 200px;
+        height: 180px;
     }
 
     /* 모바일 - Career 페이지 _ 상세 페이지 S */
@@ -939,4 +979,15 @@ nav.home-page_nav>ul>li>svg:hover {
     /* 모바일 - Career 페이지 _ 상세 페이지 _ 프로젝트 2(* KB 글로벌 뱅킹) E */
     /* 모바일 - Career 페이지 _ 상세 페이지 E */
     /***** 모바일 - Career 페이지 E *****/
+
+    /***** Contact Me 페이지 S *****/
+    .contact-me-page_wrap>div {
+        bottom: 15vh;
+    }
+
+    .contact-me-page_wrap span {
+        font-size: 24px;
+    }
+
+    /***** Contact Me 페이지 E *****/
 }

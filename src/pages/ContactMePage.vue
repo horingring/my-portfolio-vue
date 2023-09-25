@@ -1,5 +1,10 @@
 <template>
-  <div class="contact-me-page_wrap">연락 페이지</div>
+  <div class="contact-me-page_wrap">
+    <div>
+      <span>E-mail :</span>
+      <span>skyhoring@gmail.com</span>
+    </div>
+  </div>
 </template>
 
 <script>

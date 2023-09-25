@@ -59,22 +59,22 @@ export default {
       ],
       workStyleList: [
         {
-          img: require("@/assets/img/free-icon-chat-1650281.png"),
+          img: require("@/assets/img/homepage/free-icon-chat-1650281.png"),
           head: "커뮤니케이션",
           content: ["모호한 요건사항은 대화를 통해 요건정립 후 개발을 진행합니다."]
         },
         {
-          img: require("@/assets/img/free-icon-quote-request-7257807.png"),
+          img: require("@/assets/img/homepage/free-icon-quote-request-7257807.png"),
           head: "산출물 관리",
           content: ["구두 요건사항의 문서 반영을 요청하여 개발을 진행합니다."]
         },
         {
-          img: require("@/assets/img/free-icon-layers-1659098.png"),
+          img: require("@/assets/img/homepage/free-icon-layers-1659098.png"),
           head: "통일성",
           content: ["기존 코드 스타일 분석 후 통일성을 지켜 개발을 진행합니다."]
         },
         {
-          img: require("@/assets/img/free-icon-search-2040496.png"),
+          img: require("@/assets/img/homepage/free-icon-search-2040496.png"),
           head: "무결성",
           content: [
             "신규/수정건 개발시 사이드이펙트를 고려하여 개발을 진행합니다.",
