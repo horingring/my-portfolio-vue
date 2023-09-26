@@ -449,23 +449,22 @@ nav.home-page_nav>ul>li>svg:hover {
 
 /* Home 페이지 _ AboutComponent E */
 
-/* Home 페이지 _ ProjectComponent S */
-.project_wrap {
-    height: 100%;
-    /* background-color: #35495e; */
+/* Home 페이지 _ SkillComponent S */
+.skill_wrap {
+    min-height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     position: relative;
 }
 
-.project_wrap .header_area {
+.skill_wrap .header_area {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 10%;
+    height: 10vh;
 }
 
-.project_wrap .header_area .header_deco {
+.skill_wrap .header_area .header_deco {
     position: absolute;
     top: 0;
     left: 0;
@@ -474,7 +473,7 @@ nav.home-page_nav>ul>li>svg:hover {
     background-color: rgb(0, 0, 0, 0.7);
 }
 
-.project_wrap .header_area h1 {
+.skill_wrap .header_area h1 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -484,15 +483,95 @@ nav.home-page_nav>ul>li>svg:hover {
     z-index: 10;
 }
 
-.project_wrap .project_container {
+.skill_wrap .skill_container {
     width: 80%;
-    height: 100%;
+    min-height: 100%;
     box-sizing: border-box;
-    padding: 10vh 4vw 4vh;
+    padding: 16vh 4vw;
+    background-color: white;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.skill_wrap .skill_container section {
+    transition: background 0.3s;
+    width: 100%;
+    padding: 40px 40px 50px;
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+
+.skill_wrap .skill_container section:nth-child(1):hover {
+    background-color: #e2f3ff;
+}
+
+.skill_wrap .skill_container section:nth-child(1):hover .logo_wrap {
     background-color: white;
 }
 
-/* Home 페이지 _ ProjectComponent E */
+.skill_wrap .skill_container section:nth-child(2):hover {
+    background-color: #fef5d4;
+}
+
+.skill_wrap .skill_container section:nth-child(2):hover .logo_wrap {
+    background-color: white;
+}
+
+.skill_wrap .skill_container section:nth-child(3):hover {
+    background-color: #ffe2cf;
+}
+
+.skill_wrap .skill_container section:nth-child(3):hover .logo_wrap {
+    background-color: white;
+}
+
+
+.skill_wrap .skill_container section>h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skill_wrap .skill_container section>ul {
+    gap: 36px;
+}
+
+.skill_wrap .skill_container section>ul>li {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill_wrap .skill_container section .logo_wrap {
+    width: 5vw;
+    height: 5vw;
+    min-width: 50px;
+    min-height: 50px;
+    background-color: #bebebe;
+    border-radius: 40px;
+    transition: background 0.3s;
+}
+
+.skill_wrap .skill_container section:nth-child(1) .logo_wrap {
+    background-color: #e2f3ff;
+}
+
+.skill_wrap .skill_container section:nth-child(2) .logo_wrap {
+    background-color: #fef5d4;
+}
+
+.skill_wrap .skill_container section:nth-child(3) .logo_wrap {
+    background-color: #ffe2cf;
+}
+
+.skill_wrap .skill_container section .logo_wrap>img {
+    width: 3vw;
+    height: auto;
+    max-width: 40px;
+    min-width: 28px;
+}
+
+/* Home 페이지 _ SkillComponent E */
 /***** Home 페이지 E *****/
 
 /***** Career 페이지 S *****/
@@ -629,6 +708,20 @@ nav.home-page_nav>ul>li>svg:hover {
     box-sizing: border-box;
     line-height: 24px;
     scroll-behavior: smooth;
+}
+
+.career-detail-page_wrap>main::-webkit-scrollbar {
+    width: 8px;
+    background-color: #fff;
+}
+
+.career-detail-page_wrap>main::-webkit-scrollbar-thumb {
+    width: 8px;
+    background-color: rgb(0, 0, 0, 0.6);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .career-detail-page_content header {
@@ -795,6 +888,30 @@ nav.home-page_nav>ul>li>svg:hover {
 
 /***** Contact Me 페이지 E *****/
 
+/***** 태블릿 S *****/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* 태블릿 - Home 페이지 _ SkillComponent S */
+    .skill_wrap .skill_container {
+        padding: 10vh 4vw;
+    }
+
+    .skill_wrap .skill_container section>ul {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+    }
+
+    .skill_wrap .skill_container section>ul span {
+        font-size: 14px;
+    }
+
+    /* 태블릿 - Home 페이지 _ SkillComponent E */
+}
+
+/***** 태블릿 E *****/
+
+/***** 모바일 S *****/
 @media (max-width: 767px) {
 
     /***** 모바일 - 헤더 S *****/
@@ -836,6 +953,10 @@ nav.home-page_nav>ul>li>svg:hover {
     /* 모바일 - Home 페이지 _ IntroComponent E */
 
     /* 모바일 - Home 페이지 _ AboutComponent S */
+    .about_wrap .header_area h1 {
+        font-size: 30px;
+    }
+
     .about_wrap .about_container {
         flex-direction: column;
         padding-bottom: 0;
@@ -908,6 +1029,61 @@ nav.home-page_nav>ul>li>svg:hover {
     }
 
     /* 모바일 - Home 페이지 _ AboutComponent E */
+
+    /* 모바일 - Home 페이지 _ SkillComponent S */
+    .skill_wrap .header_area h1 {
+        font-size: 30px;
+    }
+
+    .skill_wrap .skill_container {
+        padding: 10vh 4vw;
+        gap: 2vh;
+    }
+
+    .skill_wrap .skill_container section {
+        width: 90%;
+        padding: 40px 0 0;
+    }
+
+    .skill_wrap .skill_container section:nth-child(1):hover {
+        background-color: white;
+    }
+
+    .skill_wrap .skill_container section:nth-child(1):hover .logo_wrap {
+        background-color: #e2f3ff;
+        ;
+    }
+
+    .skill_wrap .skill_container section:nth-child(2):hover {
+        background-color: white;
+    }
+
+    .skill_wrap .skill_container section:nth-child(2):hover .logo_wrap {
+        background-color: #fef5d4;
+        ;
+    }
+
+    .skill_wrap .skill_container section:nth-child(3):hover {
+        background-color: white;
+    }
+
+    .skill_wrap .skill_container section:nth-child(3):hover .logo_wrap {
+        background-color: #ffe2cf;
+        ;
+    }
+
+    .skill_wrap .skill_container section>ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .skill_wrap .skill_container section>ul span {
+        font-size: 12px;
+    }
+
+    /* 모바일 - Home 페이지 _ SkillComponent E */
+
     /***** 모바일 - Home 페이지 E *****/
 
     /***** 모바일 - Career 페이지 S *****/
@@ -991,3 +1167,5 @@ nav.home-page_nav>ul>li>svg:hover {
 
     /***** Contact Me 페이지 E *****/
 }
+
+/***** 모바일 E *****/

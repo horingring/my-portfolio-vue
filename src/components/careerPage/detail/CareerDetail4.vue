@@ -100,6 +100,14 @@ export default {
         {
           src: require("@/assets/img/career/project_4/my-portfolio-vue_5.png"),
           alt: "my-portfolio-vue_5"
+        },
+        {
+          src: require("@/assets/img/career/project_4/my-portfolio-vue_6.png"),
+          alt: "my-portfolio-vue_6"
+        },
+        {
+          src: require("@/assets/img/career/project_4/my-portfolio-vue_7.png"),
+          alt: "my-portfolio-vue_7"
         }
       ]
     };

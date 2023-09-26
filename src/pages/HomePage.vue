@@ -3,7 +3,7 @@
     <main>
         <IntroComponent />
         <AboutComponent />
-        <ProjectComponent />
+        <SkillComponent />
     </main>
     <HomePageNav />
   </div>
@@ -12,14 +12,14 @@
 <script>
 import IntroComponent from '@/components/homePage/IntroComponent.vue';
 import AboutComponent from '@/components/homePage/AboutComponent.vue';
-import ProjectComponent from '@/components/homePage/ProjectComponent.vue';
+import SkillComponent from '@/components/homePage/SkillComponent.vue';
 import HomePageNav from '@/components/homePage/HomePageNav.vue';
 
 export default {
     components: {
         IntroComponent,
         AboutComponent,
-        ProjectComponent,
+        SkillComponent,
         HomePageNav
     }
 }

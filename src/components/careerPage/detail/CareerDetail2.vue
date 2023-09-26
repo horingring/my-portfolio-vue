@@ -24,7 +24,7 @@
           <li>기능 :
             <ul>
               <li>대고객 Front Office - 계좌조회, 이체, 수신/여신, 국가별 다국어 지원 등</li>
-              <li>관리자 Back Office - 대고객 Front Office 연동 서비스 및 공통코드 관리, 공통 코드 등 관리</li>
+              <li>관리자 Back Office - 대고객 Front Office 연동 서비스 관리, 공통 코드 등 관리</li>
             </ul>
           </li>
         </ul>

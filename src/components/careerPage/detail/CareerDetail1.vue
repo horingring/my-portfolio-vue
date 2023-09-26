@@ -12,7 +12,7 @@
         <ul>
           <li>기획 & 디자인 : Kakao Oven, Figma, Zeplin</li>
           <li>FrontEnd : Vue.js, Javascript, CSS, Bootstrap, kakaomap, VSCode</li>
-          <li>BackEnd : Java, Sprint Boot, JPA, MariaDB, ZooKeeper, kafka, IntelliJ</li>
+          <li>BackEnd : Java, Spring Boot, JPA, MariaDB, ZooKeeper, kafka, IntelliJ</li>
           <li>인프라 : Amazon S3, Amazon cloudfront, Amazon Route 53, Amazon EC2</li>
           <li>버전관리 : Git, GitHub, GitHub Actions, GitKraken</li>
           <li>배포관리 : Jenkins</li>
