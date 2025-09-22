@@ -849,6 +849,16 @@ nav.home-page_nav>ul>li>svg:hover {
 
 /* Career 페이지 _ 상세 페이지 _ 프로젝트 3(* 유독) E */
 
+/* Career 페이지 _ 상세 페이지 _ 프로젝트 5(* KIOT) S */
+.career-detail-page_content.content_5 blockquote {
+    margin-left: 20px;
+}
+.career-detail-page_content.content_5 .meaning_section ul {
+    gap: 24px;
+}
+
+/* Career 페이지 _ 상세 페이지 _ 프로젝트 5(* KIOT) E */
+
 /* Career 페이지 _ 상세 페이지 E */
 /***** Career 페이지 E *****/
 
