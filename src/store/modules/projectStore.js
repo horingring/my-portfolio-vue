@@ -5,6 +5,16 @@ const projectStore = {
     state: {
         projectList: [
             {
+                id: 5,
+                title: "한국IOT기술원",
+                subTitle: "한국IOT기술원",
+                url: "https://kiot21.com/",
+                mainImg: require("@/assets/img/career/project_5/kiot_0.png"),
+                color: "#31b4de",
+                from: "2024.05",
+                to: ""
+            },
+            {
                 id: 4,
                 title: "My Portfolio_Vue",
                 subTitle: "My Portfolio_Vue",

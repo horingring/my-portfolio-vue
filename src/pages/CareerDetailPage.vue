@@ -19,6 +19,7 @@ import CareerDetail1 from "@/components/careerPage/detail/CareerDetail1.vue";
 import CareerDetail2 from "@/components/careerPage/detail/CareerDetail2.vue";
 import CareerDetail3 from "@/components/careerPage/detail/CareerDetail3.vue";
 import CareerDetail4 from "@/components/careerPage/detail/CareerDetail4.vue";
+import CareerDetail5 from "@/components/careerPage/detail/CareerDetail5.vue";
 
 export default {
     components: {
@@ -27,7 +28,8 @@ export default {
         CareerDetail1,
         CareerDetail2,
         CareerDetail3,
-        CareerDetail4
+        CareerDetail4,
+        CareerDetail5
     },
     computed: {
         routeParams() {

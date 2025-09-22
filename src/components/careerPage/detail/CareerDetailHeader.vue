@@ -1,7 +1,9 @@
 <template>
   <header>
     <h1>{{ currentProject.title }}</h1>
-    <span>{{ currentProject.from }} ~ {{ currentProject.to }}&nbsp;&nbsp;({{ period }}개월)</span>
+    <span>
+      {{ currentProject.from }} ~ {{ currentProject.to }}&nbsp;&nbsp;{{period ? `(${period}개월)` : ''}}
+    </span>
     <span>
       url :&nbsp;
       <a :href="currentProject.url" target="_blank">
