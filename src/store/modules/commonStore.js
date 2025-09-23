@@ -19,8 +19,8 @@ const commonStore = {
                         img: require("@/assets/img/logos/javascript_logo.png")
                     },
                     {
-                        skillName: "Sass",
-                        img: require("@/assets/img/logos/sass_logo.png")
+                        skillName: "Typescript",
+                        img: require("@/assets/img/logos/typescript_logo.png")
                     },
                     {
                         skillName: "Vue",
@@ -35,8 +35,8 @@ const commonStore = {
                         img: require("@/assets/img/logos/react_logo.png")
                     },
                     {
-                        skillName: "WebSquare",
-                        img: require("@/assets/img/logos/websquare_logo.png")
+                        skillName: "Next",
+                        img: require("@/assets/img/logos/next_logo.png")
                     }
                 ]
             },
